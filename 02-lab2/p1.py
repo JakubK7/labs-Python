@@ -1,26 +1,35 @@
-import winsound
+dane = input('Podaj ciąg liczb całkwowitych oddzielonych spacjmi')
 
-while True: 
- print("Podaj masę ciałą w kg: ")
- m_input = input()
- if m_input == 'stop':
-  print('Koniec')
-  break
- m = float(input())
- print("Podaj wzorst w cm: ") 
- w  = float(input())
- bmi = m /(w / 100)**2
- bmi = round(bmi, 2)
- if bmi < 18.5:
-  print('niedowaga')
-  winsound.Beep(400, 400)
- elif 18.5 <= bmi < 25:
-  print('waga prawidłowa')
-  winsound.Beep(800, 400)
- elif 25 <= bmi < 30:
-  print('nadwaga')
-  winsound.Beep(600, 400)
- elif  bmi > 30:
-  print('otyłość')
-  winsound.Beep(300, 600)
- print(f'Twoje bmi wynosi: {bmi}')
+if dane.strip() == '':
+   print('Nie wprowadzono żadnych liczb!!')
+else: 
+   try:
+
+    liczby = [int(x) for x in dane.split()]
+
+    ilosc = len(liczby)
+    suma = sum(liczby)
+    srednia = suma / ilosc if ilosc > 0 else 0 
+
+    dodatnie = sum(1 for x in liczby if x > 0)
+    ujemne = sum(1 for x in liczby if x < 0)
+    zera = sum(1 for x in liczby if x == 0)
+
+    max = max(liczby)
+    min = min(liczby)
+
+    print('\n--- Przekształcanie i analiza liczb ---')
+    print(f'Lista liczb: {liczby}')
+    print(f'Ilość liczb: {ilosc}')
+    print(f'Suma: {suma}')
+    print(f'Średnia: {srednia}')
+    print(f'Ilość liczb dodatnich: {dodatnie}')
+    print(f'Ilość liczb ujemnych: {ujemne}')
+    print(f'Ilość zer: {zera}')
+    print(f'Największa liczba: {max}')
+    print(f'Najmniejsza liczba: {min}')
+
+   except ValueError:
+    print('Błąd: prosze wprowadzić tylko liczby całkowite oddzielone spacjami.')
+
+
