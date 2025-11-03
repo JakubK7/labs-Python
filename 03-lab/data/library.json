@@ -1,0 +1,32 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": 1925,
+        "is_available": true
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "year": 1949,
+        "is_available": true
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "year": 1960,
+        "is_available": true
+    },
+    {
+        "title": "Wiedźmin",
+        "author": "Andrzej Sapkowski",
+        "year": 1993,
+        "is_available": true
+    },
+    {
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "year": 1997,
+        "is_available": true
+    }
+]

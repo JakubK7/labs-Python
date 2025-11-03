@@ -1,13 +1,18 @@
 import json
 from Book import Book
+import os
+
 
 class Library:
-    def __init__(self, filename='library.json'):
+    def __init__(self, filename='data/library.json'):
+        os.makedirs(os.path.dirname(filename) or '.', exist_ok=True)
         self.books = [] 
         self.filename = filename
         self.load_from_file() 
+
     def add_book(self, book):
         self.books.append(book)
+        self.save_to_file()
         print(f"Book '{book.title}' added to the library.")
     
     def list_books(self):
@@ -23,6 +28,7 @@ class Library:
         for book in self.books:
             if book.title.lower() == title.lower() and book.is_available:
                 if book.borrow_book():
+                    self.save_to_file()
                     print(f"You have borrowed '{book.title}'.")
                     return
         print(f"Sorry, the book '{title}' is not available.")
@@ -31,6 +37,7 @@ class Library:
         for book in self.books:
             if book.title.lower() == title.lower() and not book.is_available:
                 if book.return_book():
+                    self.save_to_file()
                     print(f"You have returned '{book.title}'.")
                     return
         print(f"The book '{title}' was not borrowed from this library.")
