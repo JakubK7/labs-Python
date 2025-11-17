@@ -1,0 +1,20 @@
+2025-11-17 08:12:34 INFO Użytkownik zalogował się pomyślnie
+2025-11-17 08:15:21 WARNING Niski poziom miejsca na dysku (15% wolnego)
+2025-11-17 08:27:09 INFO Operacja eksportu danych zakończona sukcesem
+2025-11-17 08:41:55 ERROR Błąd połączenia z bazą danych (timeout)
+2025-11-17 09:03:12 INFO Rozpoczęto synchronizację katalogów
+2025-11-17 09:18:47 WARNING Za dużo otwartych sesji (limit: 100)
+2025-11-17 09:25:03 INFO Synchronizacja zakończona – 1245 plików
+2025-11-17 09:33:19 ERROR Brak dostępu do pliku konfiguracyjnego
+2025-11-17 10:05:44 INFO Użytkownik zmienił hasło
+2025-11-17 10:17:22 WARNING Wykryto wolne połączenie sieciowe (12 KB/s)
+2025-11-17 10:29:58 INFO Generowanie raportu miesięcznego
+2025-11-17 10:44:11 ERROR Nieprawidłowe dane wejściowe w formularzu
+2025-11-17 11:02:33 INFO Raport wysłany na email
+2025-11-17 11:15:49 WARNING Przekroczono limit zapytań do API
+2025-11-17 11:28:07 INFO Wylogowanie użytkownika
+2025-11-17 11:40:22 ERROR Serwer nie odpowiada (503 Service Unavailable)
+2025-11-17 11:55:01 INFO Automatyczne czyszczenie tymczasowych plików
+2025-11-17 12:10:33 WARNING Temperatura serwera powyżej normy
+2025-11-17 12:25:47 INFO Backup bazy danych zakończony sukcesem
+2025-11-17 12:40:12 ERROR Błąd autoryzacji – nieprawidłowy token
